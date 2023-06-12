@@ -1,146 +1,226 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Profile</title>
-  </head>
-  <body>
-    <div id="main" class="main">
-      <section id="apresentation">
-        <div class="content_profile">
-          <img
-            class="img_profile"
-            src="./img/person.jpeg"
-            alt="imagem de perfil"
-          />
-          <div class="content_text">
-            <h1 class="text_profile title">Emerson José</h1>
-            <h3 class="text_profile subTitle">Desenvolvedor Web</h3>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html {
+      background: url("./img/walpaper2.jpg");
+    }
 
-      <div class="links">
-        <div>
-          <a href="https://www.instagram.com/emerson_jps/" target="_blank"
-            ><img
-              src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-              target="_blank"
-          /></a>
-          <a href="mailto:emerson20010213@gmail.com"
-            ><img
-              src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"
-              target="_blank"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/emerson-jos%C3%A9-196095186/"
-            target="_blank"
-            ><img
-              src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-              target="_blank"
-          /></a>
+    .main {
+      padding: 20px;
+    }
+
+    .content_profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 50px;
+      border-radius: 20px 20px 50% 50%;
+      background: linear-gradient(180deg, #192c4c 0%, rgba(57, 57, 57, 0) 100%);
+      filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.5));
+      color: aliceblue;
+      font-family: "Courier New", monospace, Arial;
+    }
+
+    .img_profile {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .subTitle {
+      font-size: 2rem;
+    }
+
+    .content_text {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      margin: 5px;
+    }
+
+    .text_profile {
+      color: aliceblue;
+      font-family: "Courier New", monospace, Arial;
+    }
+
+    #skill, #competence {
+      margin-bottom: 20px;
+    }
+
+    .content_skillTitle {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      background: rgba(8, 39, 125, 0.5);
+      font-size: 1rem;
+      width: 100%;
+      border-radius: 20px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .competence_text {
+      font-size: 0.7rem;
+    }
+
+    .list_card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 10px;
+      color: aliceblue;
+      font-family: "Courier New", monospace, Arial;
+    }
+
+    .card_item {
+      display: flex;
+      color: aliceblue;
+      text-align: center;
+      padding: 40px;
+      height: max-content;
+      font-family: "Courier New", monospace, Arial;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #192c4c 0%, rgba(57, 57, 57, 0) 100%);
+      filter: drop-shadow(0px 4px 4px rgba(78, 78, 78, 0.5));
+    }
+
+    .card_item:hover{
+      background: #192c4c;
+      transition: 1000ms;
+      border: white 1px solid;
+    }
+
+
+    .footer_info {
+      text-align: center;
+      color: aliceblue;
+      font-family: "Courier New", monospace, Arial;
+    }
+
+    #footer_description {
+      background: linear-gradient(180deg, #192c4c 0%, rgba(57, 57, 57, 0) 100%);
+      margin-top: 100px;
+      height: 200px;
+      border-radius: 20px 20px;
+      padding: 30px;
+    }
+    
+
+    @media (min-width: 768px) {
+      .main {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+    }
+  </style>
+  <title>Portifólio Emerson</title>
+</head>
+<body>
+  <main id="main" class="main">
+    <section id="apresentation">
+      <div class="content_profile">
+        <img class="img_profile" src="./img/person.jpeg" alt="imagem de perfil" />
+        <div class="content_text">
+          <h1 class="text_profile title">Emerson José</h1>
+          <h3 class="text_profile subTitle">Desenvolvedor Web</h3>
         </div>
       </div>
+    </section>
 
-      <section id="skill">
-        <div class="content_skillTitle">
-          <h1 class="text_profile">Habilidades</h1>
-        </div>
-
-        <div class="list_card">
-          <div class="card_item">Domínio das ferramentas de web design</div>
-          <div class="card_item">
-            Conhecimentos em Amazon Web Services (AWS)
-          </div>
-          <div class="card_item">
-            Conhecimentos em Pacote Office, com foco em Word e Excel
-          </div>
-          <div class="card_item">
-            Proatividade e iniciativa para resolução de problemas
-          </div>
-          <div class="card_item">
-            Disposição para o aprendizado e aprimoramento contínuos
-          </div>
-          <div class="card_item">
-            Capacidade de planejamento e organização para o cumprimento de
-            prazos
-          </div>
-          <div class="card_item">Flexibilidade e capacidade de negociação</div>
-          <div class="card_item">Comunicação eficiente com a equipe</div>
-        </div>
-      </section>
-
-      <section id="competence">
-        <div class="content_skillTitle">
-          <h1 class="text_profile competence_text">
-            JavaScript | HTML | CSS | React | Node.js | Bootstrap | TypeScript |
-            Nest.js | Nest.js | Kotlin | Git | SQL
-          </h1>
-        </div>
-
-        <div class="content_skillTitle">
-          <h1 class="text_profile">Competência desenvolvedor Web</h1>
-        </div>
-
-        <div class="list_card">
-          <div class="card_item">
-            Desenvolvimento e implementação de estratégias e planos de melhoria
-            do desempenho, visando o crescimento contínuo da equipe.
-          </div>
-          <div class="card_item">
-            Implementação de melhorias operacionais a fim de gerar economia e
-            aumentar a eficiência de equipe.
-          </div>
-          <div class="card_item">
-            Participação em reuniões com os superiores e outros membros da
-            equipe, sugerindo melhorias na área, se necessário, a fim de
-            melhorar a eficiência e a qualidade do serviço.
-          </div>
-          <div class="card_item">
-            Apoio à equipe na realização de tarefas diversas conforme a demanda,
-            garantindo a agilidade e eficiência.
-          </div>
-          <div class="card_item">
-            Desenvolvimento de planos, metas e cronogramas a fim de concluir os
-            projetos dentro do prazo.
-          </div>
-          <div class="card_item">
-            Criação de documentos e planilhas utilizando Microsoft Word e Excel,
-            auxiliando na produção de comunicações e relatórios diversos.
-          </div>
-          <div class="card_item">
-            Cadastro e atualização de dados no sistema AWS service e Banco de
-            dados Hostigator, contribuindo para a organização dos processos.
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer_description">
-        <div>
-          <h1 class="footer_info">Contatos:</h1>
-          <h3 class="footer_info">E-mail: emerson20010213@gmail.com</h3>
-          <h3 class="footer_info">
-            LinkedIn:
-            <a
-              class="footer_info"
-              href="https://www.linkedin.com/in/emerson-jos%C3%A9-196095186"
-            >
-              emerson-perfil</a
-            >
-          </h3>
-        </div>
-      </footer>
+    <div class="links">
+      <div>
+        <a href="https://www.instagram.com/emerson_jps/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+        <a href="mailto:emerson20010213@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+        <a href="https://www.linkedin.com/in/emerson-jos%C3%A9-196095186/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+      </div>
     </div>
-  </body>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/gsap@3.6.0/dist/gsap.min.js"
-    integrity="sha256-0+1stGa9ZU/jbFf6rLHIitTieTCHQx1v/FNmlhpMl48="
-    crossorigin="anonymous"
-  ></script>
+    <section id="skill">
+      <div class="content_skillTitle">
+        <h1 class="text_profile">Habilidades</h1>
+      </div>
 
-  <script src="./main.js"></script>
+      <div class="list_card">
+        <div class="card_item">Domínio das ferramentas de web design</div>
+        <div class="card_item">Conhecimentos em Amazon Web Services (AWS)</div>
+        <div class="card_item">Conhecimentos em Pacote Office, com foco em Word e Excel</div>
+        <div class="card_item">Proatividade e iniciativa para resolução de problemas</div>
+        <div class="card_item">Disposição para o aprendizado e aprimoramento contínuos</div>
+        <div class="card_item">Capacidade de planejamento e organização para o cumprimento de prazos</div>
+        <div class="card_item">Flexibilidade e capacidade de negociação</div>
+        <div class="card_item">Comunicação eficiente com a equipe</div>
+      </div>
+    </section>
+
+    <section id="competence">
+      <div class="content_skillTitle">
+        <h1 class="text_profile competence_text">JavaScript | HTML | CSS | React | Node.js | Bootstrap | TypeScript | Nest.js | Nest.js | Kotlin | Git | SQL</h1>
+      </div>
+
+      <div class="content_skillTitle">
+        <h1 class="text_profile">Competência desenvolvedor Web</h1>
+      </div>
+
+      <div class="list_card">
+        <div class="card_item">Desenvolvimento e implementação de estratégias e planos de melhoria do desempenho, visando o crescimento contínuo da equipe.</div>
+        <div class="card_item">Implementação de melhorias operacionais a fim de gerar economia e aumentar a eficiência de equipe.</div>
+        <div class="card_item">Participação em reuniões com os superiores e outros membros da equipe, sugerindo melhorias na área, se necessário, a fim de melhorar a eficiência e a qualidade do serviço.</div>
+        <div class="card_item">Apoio à equipe na realização de tarefas diversas conforme a demanda, garantindo a agilidade e eficiência.</div>
+        <div class="card_item">Desenvolvimento de planos, metas e cronogramas a fim de concluir os projetos dentro do prazo.</div>
+        <div class="card_item">Criação de documentos e planilhas utilizando Microsoft Word e Excel, auxiliando na produção de comunicações e relatórios diversos.</div>
+        <div class="card_item">Cadastro e atualização de dados no sistema AWS service e Banco de dados Hostigator, contribuindo para a organização dos processos.</div>
+      </div>
+    </section>
+
+    <footer id="footer_description">
+      <div>
+        <h1 class="footer_info">Contatos:</h1>
+        <h3 class="footer_info">E-mail: emerson20010213@gmail.com</h3>
+        <h3 class="footer_info">Celular: (81) 9 9961-7935</h3>
+        <h3 class="footer_info">LinkedIn: <a class="footer_info" href="https://www.linkedin.com/in/emerson-jos%C3%A9-196095186">emerson-perfil</a></h3>
+        <h3 class="footer_info">Endereço: Brasil/PE</h3>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.6.0/dist/gsap.min.js" integrity="sha256-0+1stGa9ZU/jbFf6rLHIitTieTCHQx1v/FNmlhpMl48=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+
+  <script>
+    gsap.from("#main", {opacity: 0, duration: 1.5})
+
+    const cardItems = document.querySelectorAll(".card_item");
+
+    cardItems.forEach((item, index) => {
+      gsap.from(item, {
+        opacity: 0,
+        scale: 0,
+        scrollTrigger: {
+          trigger: item,
+          start: "top bottom-=100",
+          toggleActions: "play none none reverse",
+          delay: index * 0.2, // Ajuste o valor do delay conforme necessário
+        },
+      });
+    });
+  </script>
+</body>
 </html>
