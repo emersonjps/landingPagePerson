@@ -172,6 +172,33 @@
         /* Estilos para o verso da carta */
         transform: rotateY(180deg);
       }
+
+      #carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+
+      #carousel img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 20px;
+      }
+
+      #carousel img.active {
+        opacity: 1;
+      }
     </style>
     <title>Portifólio Emerson</title>
   </head>
@@ -298,6 +325,25 @@
           </div>
         </div>
       </section>
+      <div id="carousel">
+        <img
+          src="./img/p06img1.png"
+          class="active"
+          data-link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
+        />
+        <img
+          src="./img/p06img2.png"
+          data-link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
+        />
+        <img
+          src="./img/p06img3.png"
+          data-link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
+        />
+        <img
+          src="./img/p06img4.png"
+          data-link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
+        />
+      </div>
 
       <footer id="footer_description">
         <div>
@@ -342,6 +388,34 @@
           },
         });
       });
+
+      window.onload = function () {
+        var carousel = document.getElementById("carousel");
+        var images = carousel.getElementsByTagName("img");
+        var currentIndex = 0;
+
+        function changeImage() {
+          for (var i = 0; i < images.length; i++) {
+            images[i].classList.remove("active");
+          }
+
+          images[currentIndex].classList.add("active");
+          currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        function openLink() {
+          var currentImage = images[currentIndex];
+          var link = currentImage.getAttribute("data-link");
+
+          if (link) {
+            window.open(link, "_blank");
+          }
+        }
+
+        carousel.addEventListener("click", openLink);
+
+        setInterval(changeImage, 2000);
+      };
     </script>
   </body>
 </html>
