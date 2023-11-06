@@ -5,6 +5,7 @@ import ThreeCompenent from "./components/ThreeComponent/ThreeComponent.jsx";
 import ViewProfile from "./components/ViewProfile/ViewProfile";
 import WorkProfile from "./components/WorkProfile/WorkProfile";
 import BioProfile from "./components/BioProfile/BioProfile";
+import LinksProfile from "./components/LinksProfile/LinksProfile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,10 @@ export default function Home() {
         <ViewProfile />
         <WorkProfile />
         <BioProfile />
+        <LinksProfile />
       </article>
+
+      <p className="copyright">© 2023 Emerson José. All Rights Reserved.</p>
     </main>
   );
 }
