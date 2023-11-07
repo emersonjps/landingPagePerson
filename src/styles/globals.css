@@ -35,16 +35,19 @@ body {
 body {
   font-family: Rounded Mplus 1c;
   color: rgba(255, 255, 255, 0.92);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-end-rgb));
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
 }
 
 .my_canvas {
-  margin: -30px;
+  margin-top: -40px;
+}
+
+.view_profile {
+  margin-top: -40px;
 }
 
 .view_profile .title_profile {
@@ -57,6 +60,7 @@ body {
   flex-shrink: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .title_profile p {
