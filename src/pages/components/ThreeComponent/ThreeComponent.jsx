@@ -9,8 +9,8 @@ export default function ThreeCompenent() {
 
   useEffect(() => {
     const lenght = {
-      width: 400,
-      height: 400,
+      width: 500,
+      height: 500,
     };
 
     const scene = new THREE.Scene();
@@ -93,7 +93,7 @@ export default function ThreeCompenent() {
 
   return (
     <div>
-      <canvas ref={canvasRef} />
+      <canvas className="my_canvas" ref={canvasRef} />
     </div>
   );
 }

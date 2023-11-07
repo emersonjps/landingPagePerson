@@ -42,6 +42,14 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.my_canvas {
+  margin-top: -40px;
+}
+
+.view_profile {
+  margin-top: -40px;
+}
+
 .view_profile .title_profile {
   display: flex;
   width: 501.91px;
@@ -52,6 +60,7 @@ body {
   flex-shrink: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .title_profile p {
