@@ -54,6 +54,7 @@ body {
 
 .navbar {
   backdrop-filter: blur(10px);
+  z-index: 100;
 }
 
 .my_canvas {
@@ -75,7 +76,6 @@ body {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  z-index: -1;
 }
 
 .title_profile p {
