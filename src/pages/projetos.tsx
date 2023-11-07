@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 import NavComponent from "./components/NavComponent/NavComponent";
 import { animationVariants } from "./utils/AnimationVariants";
-import Card from "./components/Card/Card";
 
-export default function Competencias() {
+export default function Projetos() {
   return (
     <>
-      <NavComponent competencia={true} projetos={false} />{" "}
+      <NavComponent competencia={false} projetos={true} />
       <div className="flex mt-20 justify-center items-center w-96">
         <motion.div
           initial="hidden"
@@ -14,9 +13,7 @@ export default function Competencias() {
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <p>Competencias</p>
-
-          <Card />
+          <p>Projetos</p>
         </motion.div>
       </div>
     </>

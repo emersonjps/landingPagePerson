@@ -7,26 +7,16 @@ import WorkProfile from "./components/WorkProfile/WorkProfile";
 import BioProfile from "./components/BioProfile/BioProfile";
 import { motion } from "framer-motion";
 import LinksProfile from "./components/LinksProfile/LinksProfile";
+import { animationVariants } from "./utils/AnimationVariants";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const animationVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50, 
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-    },
-  };
-
   return (
     <main
       className={`flex min-h-screen flex-col items-center ${inter.className}`}
     >
-      <NavComponent />
+      <NavComponent competencia={false} projetos={false} />
 
       <ThreeCompenent />
       <motion.div
@@ -35,7 +25,6 @@ export default function Home() {
         variants={animationVariants}
         transition={{ duration: 0.5 }}
       >
-
         <article className="pl-96 pr-96">
           <ViewProfile />
           <WorkProfile />

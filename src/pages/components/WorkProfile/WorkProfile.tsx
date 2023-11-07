@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function WorkProfile() {
   return (
     <section className="work_description mb-10">
       <h3 className="mb-5">Work</h3>
       <p className="text-justify">
-        O meu portfólio destaca minhas habilidades como desenvolvedor web com
+        Olá meu nome é Emerson josé, minhas habilidades como desenvolvedor web tem
         foco na segurança de tipos. Utilizo <span>Typescript</span> para
         garantir a integridade dos dados na web, especialmente em projetos que
         empregam
@@ -23,7 +25,7 @@ export default function WorkProfile() {
         a biblioteca <span>Jest</span>.
       </p>
       <div className="flex justify-center mt-7">
-        <button className="btn_portifolio">Meu Portfolio {">"}</button>
+        <Link href={'portifolio'} className="btn_portifolio">Meu Portfolio {">"}</Link>
       </div>
     </section>
   );
