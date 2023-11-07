@@ -4,7 +4,7 @@ import git from "@/assets/img/github.svg";
 
 export default function NavComponent() {
   return (
-    <nav className="fixed flex items-center justify-center gap-7 top-0 w-screen bg-[#2020239c] p-5">
+    <nav className="navbar fixed flex items-center justify-center gap-7 top-0 w-screen bg-[#2020239c] p-5">
       <button className="flex gap-1">
         <Image alt="logo" src={logo} width={24} height={24} />
         <p className="font-bold">EMERSON JOSÉ</p>

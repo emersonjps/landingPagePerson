@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function LinksProfile() {
   return (
     <section className="links_description mb-10">
-      <h3 className="mb-5">On the web</h3>
+      <h3 className="mb-5">contact</h3>
 
       <div className="flex flex-col gap-4">
         <div className="flex gap-2">

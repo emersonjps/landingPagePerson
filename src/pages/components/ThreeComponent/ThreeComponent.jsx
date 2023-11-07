@@ -1,3 +1,4 @@
+import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
@@ -7,10 +8,15 @@ export default function ThreeCompenent() {
   const canvasRef = useRef();
 
   useEffect(() => {
+    const lenght = {
+      width: 400,
+      height: 400,
+    };
+
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
-      window.innerWidth / window.innerHeight,
+      lenght.width / lenght.height,
       0.1,
       1000
     );
@@ -21,9 +27,9 @@ export default function ThreeCompenent() {
     const renderer = new THREE.WebGLRenderer({
       canvas: canvasRef.current,
       antialias: true,
-      alpha: true, // Configura o fundo transparente
+      alpha: true,
     });
-    renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
+    renderer.setSize(lenght.width, lenght.height);
 
     const light = new THREE.AmbientLight(0xffffff, 1); // 0.1 <- VALOR PADRÃO
     light.position.x = 1;
@@ -46,15 +52,18 @@ export default function ThreeCompenent() {
       (gltf) => {
         const model = gltf.scene;
         model.position.copy(new THREE.Vector3(0, 0, 0));
-        let scale = 1.3;
+        let scale = 1.5;
         model.scale.set(scale, scale, scale);
-        model.position.y = 1
-        model.rotation.x = 0.1
+        model.rotation.y = 5;
         scene.add(model);
         robot = model;
-        robot.update = () => {
-          robot.rotation.y += 0.005;
-        };
+        gsap.to(robot.rotation, {
+          x: 0,
+          y: 0,
+          z: 0,
+          ease: "elastic",
+          duration: 5,
+        });
         mixer = new THREE.AnimationMixer(model);
         const clips = gltf.animations;
         const clip = THREE.AnimationClip.findByName(clips, "Start_Liftoff");
@@ -76,7 +85,6 @@ export default function ThreeCompenent() {
       requestAnimationFrame(animate);
       camera.updateProjectionMatrix();
       controls.update();
-      if (robot) robot.update();
       renderer.render(scene, camera);
     };
 
@@ -85,7 +93,7 @@ export default function ThreeCompenent() {
 
   return (
     <div>
-      <canvas className="my_canvas" ref={canvasRef} />
+      <canvas ref={canvasRef} />
     </div>
   );
 }

@@ -35,16 +35,11 @@ body {
 body {
   font-family: Rounded Mplus 1c;
   color: rgba(255, 255, 255, 0.92);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-end-rgb));
 }
 
-.my_canvas {
-  margin: -30px;
+.navbar {
+  backdrop-filter: blur(10px);
 }
 
 .view_profile .title_profile {
