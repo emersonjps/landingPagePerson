@@ -17,20 +17,20 @@ export default function Competencias() {
           <p className="mb-10">Competências</p>
 
           <div className="flex gap-7 flex-wrap">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card key={'01'} />
+            <Card key={'02'} />
+            <Card key={'03'} />
+            <Card key={'04'} />
+            <Card key={'05'} />
+            <Card key={'06'} />
+            <Card key={'07'} />
+            <Card key={'08'} />
+            <Card key={'09'} />
+            <Card key={'10'} />
+            <Card key={'11'} />
+            <Card key={'12'} />
+            <Card key={'13'} />
+            <Card key={'14'} />
           </div>
         </motion.div>
       </div>
