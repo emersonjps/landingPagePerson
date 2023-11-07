@@ -11,7 +11,7 @@ export default function Card() {
       whileHover="hover"
       transition={{ duration: 0.5 }}
     >
-      <Image alt="img" src={img} className="rounded-xl"/>
+      <Image alt="img" src={img} className="rounded-xl" width={200} height={200}/>
       <p>descrição</p>
     </motion.div>
   );
