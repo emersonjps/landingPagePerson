@@ -5,8 +5,8 @@ export default function WorkProfile() {
     <section className="work_description mb-10">
       <h3 className="mb-5">Work</h3>
       <p className="text-justify">
-        Olá meu nome é Emerson josé, minhas habilidades como desenvolvedor web tem
-        foco na segurança de tipos. Utilizo <span>Typescript</span> para
+        Olá meu nome é Emerson josé, minhas habilidades como desenvolvedor web
+        tem foco na segurança de tipos. Utilizo <span>Typescript</span> para
         garantir a integridade dos dados na web, especialmente em projetos que
         empregam
         <span> Nestjs</span> + TS para o <span>back-end</span>, seguindo o
@@ -25,7 +25,9 @@ export default function WorkProfile() {
         a biblioteca <span>Jest</span>.
       </p>
       <div className="flex justify-center mt-7">
-        <Link href={'portifolio'} className="btn_portifolio">Meu Portfolio {">"}</Link>
+        <Link href={"portifolio"} className="btn_portifolio">
+          Meu Portfolio {">"}
+        </Link>
       </div>
     </section>
   );

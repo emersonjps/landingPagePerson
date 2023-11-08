@@ -6,7 +6,7 @@ import NavComponent from "./components/NavComponent/NavComponent";
 import ThreeCompenent from "./components/ThreeComponent/ThreeComponent.jsx";
 import ViewProfile from "./components/ViewProfile/ViewProfile";
 import WorkProfile from "./components/WorkProfile/WorkProfile";
-import { animationVariants } from "./utils/AnimationVariants";
+import animationVariants from "../utils/AnimationVariants";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <main
       className={`flex min-h-screen flex-col items-center ${inter.className}`}
-      // className={`flex min-h-screen flex-col items-center`}
     >
       <NavComponent competencia={false} projetos={false} />
 

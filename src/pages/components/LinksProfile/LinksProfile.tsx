@@ -36,7 +36,9 @@ export default function LinksProfile() {
           <Link
             className="link_profile"
             target="_blank"
-            href={"https://mail.google.com/mail/?view=cm&fs=1&to=emerson20010213@gmail.com"}
+            href={
+              "https://mail.google.com/mail/?view=cm&fs=1&to=emerson20010213@gmail.com"
+            }
             about="perfil"
           >
             @Gmail

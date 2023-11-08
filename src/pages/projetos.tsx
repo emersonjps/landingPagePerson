@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import NavComponent from "./components/NavComponent/NavComponent";
-import { animationVariants } from "./utils/AnimationVariants";
 import Card from "./components/Card/Card";
+import animationVariants from "@/utils/AnimationVariants";
 
 export default function Projetos() {
   return (

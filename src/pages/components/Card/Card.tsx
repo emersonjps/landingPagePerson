@@ -1,7 +1,7 @@
-import { cardVariants } from "@/pages/utils/AnimationVariants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import img from "@/assets/img/profile.jpeg";
+import cardVariants from "@/utils/CardVariants";
 
 export default function Card() {
   return (
