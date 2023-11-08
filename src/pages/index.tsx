@@ -9,12 +9,13 @@ import { motion } from "framer-motion";
 import LinksProfile from "./components/LinksProfile/LinksProfile";
 import { animationVariants } from "./utils/AnimationVariants";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center ${inter.className}`}
+      // className={`flex min-h-screen flex-col items-center ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center`}
     >
       <NavComponent competencia={false} projetos={false} />
 
