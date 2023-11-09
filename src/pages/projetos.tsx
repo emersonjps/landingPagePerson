@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import NavComponent from "./components/NavComponent/NavComponent";
 import Card from "./components/CardCompetencia/CardCompetencia";
 import animationVariants from "@/utils/AnimationVariants";
+import ProjectView from "./components/ProjectView/ProjectView";
+import CardProjeto from "./components/CardProjeto/CardProjeto";
+
+import img from "@/assets/img/figma.png";
+
+import relatorio from "@/assets/img/relatorio.png";
+import p06 from "@/assets/img/p06.jpg";
 
 export default function Projetos() {
   return (
@@ -14,10 +21,21 @@ export default function Projetos() {
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-10">Projetos</p>
-
-          <div className="flex gap-7 flex-wrap">
-            {/* <Card /> */}
+          <div className="flex h-screen gap-10">
+            <CardProjeto
+              img={relatorio}
+              widht={0}
+              height={0}
+              desctiption="Aplicação WEB, para gerar relatórios de compras de insumos por semestre. Surgiu da necessidade de facilitar compra dos insumos para a instituição de ensino superior, onde para cada aula prática presencial a um consumo considerável por equipes de insumos gerados, esta aplicação faz o cálculo com base na quantidade de alunos existente naquele período. Foi escolhido no front-end NEXTJS com Typescript para segurança de tipos na parte do cliente sendo potencializado pela gama de ferramentas de desenvolvimento do NEXTJS, no back-end foi escolhido a modelagem de um servidor STRAPI, por sua praticidade e versatilidade, integrado com AWS para armazenamento de mídia, e conectado ao banco de dados MYSQL na hostgator."
+              link="https://jogo-empresarial.herokuapp.com/"
+            />
+            <CardProjeto
+              img={p06}
+              widht={0}
+              height={0}
+              desctiption="Simulador de arquitetura - com o intuito de simular uma planta baixa de projeto elétrico de baixa tensão, onde ocorre a distribuição de tomadas e quadro de circuito de acordo com norma NBR, simulador cobre aula práticas que alunos deveriam e deslocar até as imediações, reduzindo custo e aumentando a retenção do aluno por facilidades digitais."
+              link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
+            />
           </div>
         </motion.div>
       </div>
