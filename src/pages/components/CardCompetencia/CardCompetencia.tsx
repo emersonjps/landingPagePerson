@@ -26,7 +26,7 @@ export default function CardCompetencia({
           />
         </div>
         <div className="card_back -mt-36">
-          <p className="w-48">{desctiption}</p>
+          <p className="w-60 text-justify">{desctiption}</p>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import ThreeCompenent from "./components/ThreeComponent/ThreeComponent.jsx";
 import ViewProfile from "./components/ViewProfile/ViewProfile";
 import WorkProfile from "./components/WorkProfile/WorkProfile";
 import animationVariants from "../utils/AnimationVariants";
+import Copyright from "./components/Copyright/Copyright";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function Home() {
           <LinksProfile />
         </article>
       </motion.div>
-      <p className="copyright">© 2023 Emerson José. All Rights Reserved.</p>
+      <Copyright />
     </main>
   );
 }
