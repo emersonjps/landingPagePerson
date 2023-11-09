@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { URL } from "url";
 
 interface Props {
   desctiption: string;
@@ -32,7 +33,7 @@ export default function CardProjeto({
           <p className="w-96 text-justify">{desctiption}</p>
           <Link
             className="p-2 mt-3 bg-green-800 rounded hover:bg-green-700"
-            href={link}
+            href={`${link}`}
             target="_blank"
           >
             Link!

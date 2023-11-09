@@ -1,14 +1,10 @@
-import { motion } from "framer-motion";
-import NavComponent from "./components/NavComponent/NavComponent";
-import Card from "./components/CardCompetencia/CardCompetencia";
 import animationVariants from "@/utils/AnimationVariants";
-import ProjectView from "./components/ProjectView/ProjectView";
+import { motion } from "framer-motion";
 import CardProjeto from "./components/CardProjeto/CardProjeto";
+import NavComponent from "./components/NavComponent/NavComponent";
 
-import img from "@/assets/img/figma.png";
-
-import relatorio from "@/assets/img/relatorio.png";
 import p06 from "@/assets/img/p06.jpg";
+import relatorio from "@/assets/img/relatorio.png";
 
 export default function Projetos() {
   return (
