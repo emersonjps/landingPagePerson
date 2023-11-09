@@ -25,7 +25,7 @@ export default function WorkProfile() {
         a biblioteca <span>Jest</span>.
       </p>
       <div className="flex justify-center mt-7">
-        <Link href={"portifolio"} className="btn_portifolio">
+        <Link href={"projetos"} className="btn_portifolio">
           Meu Portfolio {">"}
         </Link>
       </div>

@@ -205,3 +205,25 @@ body {
   font-style: normal;
   font-weight: 600;
 }
+
+.card_competencia {
+  perspective: 1000px;
+}
+
+.card_inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card_inner:hover {
+  transform: rotateY(200deg);
+}
+
+.card_front,
+.card_back {
+  backface-visibility: hidden;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+}
