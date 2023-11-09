@@ -3,7 +3,7 @@ export default function BioProfile() {
     <section className="bio_description mb-10">
       <h3 className="mb-5">Bio</h3>
       <div className="flex gap-5 mb-3">
-        <h4>2025</h4>
+        <h4>2023</h4>
         <p>Graduação em Análise e desenvolvimento de sistemas (Em andamento)</p>
       </div>
 
