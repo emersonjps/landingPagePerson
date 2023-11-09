@@ -229,3 +229,20 @@ body {
 .card_back {
   transform: rotateY(180deg);
 }
+
+
+@media (max-width: 912px) {
+  :root {
+    display: flex;
+  }
+
+  #logo_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo_name p{
+    width: 150px;
+  }
+}

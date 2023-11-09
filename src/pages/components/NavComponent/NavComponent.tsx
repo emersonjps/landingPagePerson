@@ -11,7 +11,7 @@ type option = {
 export default function NavComponent({ projetos, competencia }: option) {
   return (
     <nav className="navbar fixed flex items-center justify-center gap-7 top-0 w-screen bg-[#2020239c] p-5">
-      <Link className="flex gap-1" href={"/"}>
+      <Link id="logo_name" className="flex gap-1" href={"/"}>
         <Image alt="logo" src={logo} width={24} height={24} />
         <p className="font-bold">EMERSON JOSÉ</p>
       </Link>
