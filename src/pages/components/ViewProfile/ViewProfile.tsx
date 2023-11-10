@@ -13,7 +13,9 @@ export default function ViewProfile() {
         <div>
           <h2 className="profile_name">Emerson José</h2>
           <h3 className="profile_softskill">
-            Soft Skills: ( Resolução de
+            Soft Skills: 
+            <br />
+            ( Resolução de
             Problemas / Comunicação )
           </h3>
           <h3 className="profile_skill">
