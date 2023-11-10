@@ -5,7 +5,7 @@ export default function WorkProfile() {
     <section className="work_description mb-10">
       <h3 className="mb-5">Work</h3>
       <p className="text-justify">
-        Olá meu nome é Emerson josé, minhas habilidades como desenvolvedor web
+        Olá, meu nome é Emerson José, minhas habilidades como desenvolvedor web
         tem foco na segurança de tipos. Utilizo <span>Typescript</span> para
         garantir a integridade dos dados na web, especialmente em projetos que
         empregam
