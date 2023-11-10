@@ -18,7 +18,7 @@ export default function CardProjeto({
   height,
 }: Props) {
   return (
-    <div className="card_competencia h-48">
+    <div className="card_competencia">
       <div className="card_inner justify-center items-center text-center">
         <div className="card_front flex justify-center">
           <Image
@@ -29,7 +29,7 @@ export default function CardProjeto({
             height={height}
           />
         </div>
-        <div className="card_back -mt-64 flex flex-col items-center">
+        <div className="card_back absolute top-0 flex flex-col items-center">
           <p className="w-96 text-justify">{desctiption}</p>
           <Link
             className="p-2 mt-3 bg-green-800 rounded hover:bg-green-700"

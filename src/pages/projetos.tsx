@@ -4,7 +4,10 @@ import CardProjeto from "./components/CardProjeto/CardProjeto";
 import NavComponent from "./components/NavComponent/NavComponent";
 
 import p06 from "@/assets/img/p06.jpg";
+import p14 from "@/assets/img/p14.jpg";
+import p15 from "@/assets/img/p15.jpg";
 import relatorio from "@/assets/img/relatorio.png";
+import Copyright from "./components/Copyright/Copyright";
 
 export default function Projetos() {
   return (
@@ -17,7 +20,8 @@ export default function Projetos() {
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex h-screen gap-10">
+          <p className="text-center">Projetos em funcionamento</p>
+          <div className="flex flex-wrap h-screen gap-16">
             <CardProjeto
               img={relatorio}
               widht={0}
@@ -29,9 +33,24 @@ export default function Projetos() {
               img={p06}
               widht={0}
               height={0}
-              desctiption="Simulador de arquitetura - com o intuito de simular uma planta baixa de projeto elétrico de baixa tensão, onde ocorre a distribuição de tomadas e quadro de circuito de acordo com norma NBR, simulador cobre aula práticas que alunos deveriam e deslocar até as imediações, reduzindo custo e aumentando a retenção do aluno por facilidades digitais."
+              desctiption="Simulador de Arquitetura Elétrica de Baixa Tensão: Projetado para simular plantas baixas de sistemas elétricos, este simulador replica de forma precisa a distribuição de tomadas e quadros de circuito conforme as normas da NBR. Focado em proporcionar aulas práticas, o simulador elimina a necessidade de deslocamento físico, reduzindo custos enquanto maximiza a retenção do aluno por meio de uma abordagem digital acessível e eficiente."
               link="https://practices-lia-stage.herokuapp.com/p06-arquitetura/index.html"
             />
+            <CardProjeto
+              img={p14}
+              widht={0}
+              height={0}
+              desctiption="Simulador Avançado de Arquitetura: Uma ferramenta educacional projetada para orientar estudantes de ensino superior na análise de projetos residenciais. Este simulador abrange cálculos essenciais, incluindo a refrigeração, a distribuição estratégica de pontos de ar-condicionados e cálculo preciso da carga de BTUS. Oferecendo uma experiência prática, auxilia no desenvolvimento de habilidades críticas para a concepção de ambientes residenciais bem refrigerados."
+              link="https://practices-lia-stage.herokuapp.com/p14-arquitetura-ar-condicionado/index.html"
+            />
+            <CardProjeto
+              img={p15}
+              widht={0}
+              height={0}
+              desctiption="Simulador Avançado de Arquitetura: Uma ferramenta educacional projetada para orientar estudantes de ensino superior na análise de projetos residenciais. Este simulador abrange cálculos essenciais, incluindo o índice de luminância, a distribuição estratégica de pontos luminosos e o cálculo preciso da carga de circuito. Oferecendo uma experiência prática, auxilia no desenvolvimento de habilidades críticas para a concepção de ambientes residenciais bem iluminados e funcionalmente elétricos."
+              link="https://practices-lia-stage.herokuapp.com/p15-arquitetura-indice-de-luminancia/index.html"
+            />
+            <Copyright />
           </div>
         </motion.div>
       </div>

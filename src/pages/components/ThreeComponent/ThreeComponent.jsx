@@ -43,6 +43,11 @@ export default function ThreeCompenent() {
     directionalLight.position.y = 9;
     directionalLight.position.z = 7;
 
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
     const loader = new GLTFLoader();
 
     let mixer;
@@ -57,6 +62,7 @@ export default function ThreeCompenent() {
         model.rotation.y = 5;
         scene.add(model);
         robot = model;
+        gsap.to(cube.scale, { x: 0, y: 0, z: 0 });
         gsap.to(robot.rotation, {
           x: 0,
           y: 0,
@@ -83,6 +89,8 @@ export default function ThreeCompenent() {
     const animate = () => {
       if (mixer?.update) mixer.update(clock.getDelta());
       requestAnimationFrame(animate);
+      cube.rotation.x += 0.05;
+      cube.rotation.y += 0.05;
       camera.updateProjectionMatrix();
       controls.update();
       renderer.render(scene, camera);
