@@ -18,6 +18,7 @@ export default function CardCompetencia({
       <div className="card_inner justify-center items-center text-center">
         <div className="card_front flex justify-center">
           <Image
+            id="img-competencia"
             alt="img"
             src={img}
             className="rounded-xl"

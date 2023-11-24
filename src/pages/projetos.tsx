@@ -20,7 +20,9 @@ export default function Projetos() {
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-center">Projetos em funcionamento</p>
+          <p id="titulo-competencia" className="text-center">
+            Projetos em funcionamento
+          </p>
           <div className="flex flex-wrap h-screen gap-16">
             <CardProjeto
               img={relatorio}

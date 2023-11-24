@@ -25,7 +25,7 @@ export default function Home() {
         variants={animationVariants}
         transition={{ duration: 0.5 }}
       >
-        <article className="pl-96 pr-96">
+        <article id="sumary" className="pl-96 pr-96">
           <ViewProfile />
           <WorkProfile />
           <BioProfile />
