@@ -13,7 +13,9 @@ import Link from "next/link";
 export default function Projetos() {
   return (
     <section className="flex min-h-screen flex-col items-center">
-      {/* <NavComponent competencia={false} projetos={true} />{" "} */}
+      <div id="nav-projetos" className="flex w-full">
+        <NavComponent competencia={false} projetos={true} />{" "}
+      </div>
       <div className="flex mt-20 justify-center items-center w-96">
         <motion.div
           initial="hidden"
@@ -55,7 +57,7 @@ export default function Projetos() {
             />
             <Link
               href={"/"}
-              className="m-auto p-2 rounded-lg bg-orange-900 hover:bg-orange-950"
+              className="m-auto p-2 rounded-lg bg-orange-900 hover:bg-orange-950 duration-300"
             >
               Voltar para Home
             </Link>
