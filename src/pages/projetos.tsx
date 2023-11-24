@@ -8,11 +8,12 @@ import p14 from "@/assets/img/p14.jpg";
 import p15 from "@/assets/img/p15.jpg";
 import relatorio from "@/assets/img/relatorio.png";
 import Copyright from "./components/Copyright/Copyright";
+import Link from "next/link";
 
 export default function Projetos() {
   return (
     <section className="flex min-h-screen flex-col items-center">
-      <NavComponent competencia={false} projetos={true} />{" "}
+      {/* <NavComponent competencia={false} projetos={true} />{" "} */}
       <div className="flex mt-20 justify-center items-center w-96">
         <motion.div
           initial="hidden"
@@ -52,6 +53,12 @@ export default function Projetos() {
               desctiption="Simulador Avançado de Arquitetura: Uma ferramenta educacional projetada para orientar estudantes de ensino superior na análise de projetos residenciais. Este simulador abrange cálculos essenciais, incluindo o índice de luminância, a distribuição estratégica de pontos luminosos e o cálculo preciso da carga de circuito. Oferecendo uma experiência prática, auxilia no desenvolvimento de habilidades críticas para a concepção de ambientes residenciais bem iluminados e funcionalmente elétricos."
               link="https://practices-lia-stage.herokuapp.com/p15-arquitetura-indice-de-luminancia/index.html"
             />
+            <Link
+              href={"/"}
+              className="m-auto p-2 rounded-lg bg-orange-900 hover:bg-orange-950"
+            >
+              Voltar para Home
+            </Link>
             <Copyright />
           </div>
         </motion.div>
