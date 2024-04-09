@@ -1,13 +1,13 @@
 import animationVariants from "@/utils/AnimationVariants";
 import { motion } from "framer-motion";
-import CardProjeto from "./components/CardProjeto/CardProjeto";
-import NavComponent from "./components/NavComponent/NavComponent";
+import CardProjeto from "../components/CardProjeto/CardProjeto";
+import NavComponent from "../components/NavComponent/NavComponent";
 
 import p06 from "@/assets/img/p06.jpg";
 import p14 from "@/assets/img/p14.jpg";
 import p15 from "@/assets/img/p15.jpg";
 import relatorio from "@/assets/img/relatorio.png";
-import Copyright from "./components/Copyright/Copyright";
+import Copyright from "../components/Copyright/Copyright";
 import Link from "next/link";
 
 export default function Projetos() {

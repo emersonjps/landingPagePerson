@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import NavComponent from "./components/NavComponent/NavComponent";
-import CardCompetencia from "./components/CardCompetencia/CardCompetencia";
+import NavComponent from "../components/NavComponent/NavComponent";
+import CardCompetencia from "../components/CardCompetencia/CardCompetencia";
 import animationVariants from "@/utils/AnimationVariants";
 import js from "@/assets/img/js.png";
 import ts from "@/assets/img/ts.png";
@@ -12,7 +12,7 @@ import jest from "@/assets/img/jest.png";
 import axios from "@/assets/img/axios.png";
 import figma from "@/assets/img/figma.png";
 import aws from "@/assets/img/aws.png";
-import Copyright from "./components/Copyright/Copyright";
+import Copyright from "../components/Copyright/Copyright";
 
 export default function Competencias() {
   return (

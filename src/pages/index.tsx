@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
-import BioProfile from "./components/BioProfile/BioProfile";
-import LinksProfile from "./components/LinksProfile/LinksProfile";
-import NavComponent from "./components/NavComponent/NavComponent";
-import ThreeCompenent from "./components/ThreeComponent/ThreeComponent.jsx";
-import ViewProfile from "./components/ViewProfile/ViewProfile";
-import WorkProfile from "./components/WorkProfile/WorkProfile";
+import BioProfile from "../components/BioProfile/BioProfile";
+import LinksProfile from "../components/LinksProfile/LinksProfile";
+import NavComponent from "../components/NavComponent/NavComponent";
+import ThreeCompenent from "../components/ThreeComponent/ThreeComponent.jsx";
+import ViewProfile from "../components/ViewProfile/ViewProfile";
+import WorkProfile from "../components/WorkProfile/WorkProfile";
 import animationVariants from "../utils/AnimationVariants";
-import Copyright from "./components/Copyright/Copyright";
+import Copyright from "../components/Copyright/Copyright";
 
 const inter = Inter({ subsets: ["latin"] });
 
