@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import profile from "@/assets/img/profile.jpeg";
+import profile from "@/assets/img/profile.jpg";
 
 export default function ViewProfile() {
   return (
@@ -13,17 +13,15 @@ export default function ViewProfile() {
         <div>
           <h2 className="profile_name">Emerson José</h2>
           <h3 className="profile_softskill">
-            Soft Skills: 
-            <br />
-            ( Resolução de
-            Problemas / Comunicação )
+            Soft Skills:
+            <br />( Resolução de Problemas / Comunicação )
           </h3>
           <h3 className="profile_skill">
             Hard Skills: ( Desenvolvedor / UX / UI )
           </h3>
         </div>
         <Image
-          className="img_profile"
+          className="rounded-full shadow-2xl shadow-indigo-50"
           alt="profile"
           src={profile}
           width={100}
