@@ -263,6 +263,9 @@ body {
   :root {
     display: flex;
   }
+  html {
+    padding: 20px;
+  }
   #sumary {
     padding: 1rem;
   }
