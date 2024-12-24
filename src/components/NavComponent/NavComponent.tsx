@@ -16,31 +16,18 @@ export default function NavComponent({ projetos, competencia }: option) {
     >
       <Link id="logo_name" className="flex gap-1" href={"/"}>
         <Image alt="logo" src={logo} width={24} height={24} />
-        <p id="logo-name" className="font-bold">
-          EMERSON JOSÉ
-        </p>
+        <p id="logo-name" className="font-bold">EMERSON JOSÉ</p>
       </Link>
       <Link
-        className={`${
-          competencia ? "bg-[#88CCCA] " : ""
-        } font-extralight p-1 rounded`}
-        href={"competencias"}
-      >
-        Competências
-      </Link>
+        className={`${competencia ? "bg-[#88CCCA] " : ""} font-extralight p-1 rounded`}
+        href={"competencias"}>Competências</Link>
       <Link
-        className={`${
-          projetos ? "bg-[#88CCCA]" : ""
-        } font-extralight p-1 rounded`}
-        href={"/projetos"}
-      >
-        Projetos
-      </Link>
+        className={`${projetos ? "bg-[#88CCCA]" : ""} font-extralight p-1 rounded`}
+        href={"/projetos"}>Projetos</Link>
       <Link
         className="flex gap-1"
         href={"https://github.com/emersonjps/landingPagePerson"}
-        target="_blank"
-      >
+        target="_blank">
         <Image alt="source" src={git} width={24} height={24} />
         <p className="font-extralight">Source</p>
       </Link>

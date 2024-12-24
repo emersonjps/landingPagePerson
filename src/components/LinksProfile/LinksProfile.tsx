@@ -38,7 +38,7 @@ export default function LinksProfile() {
             className="link_profile"
             target="_blank"
             href={
-              "https://mail.google.com/mail/?view=cm&fs=1&to=emerson20010213@gmail.com"
+              "https://mail.google.com/mail/?view=cm&fs=1&to=emerson.dev.pereira@gmail.com"
             }
             about="perfil"
           >

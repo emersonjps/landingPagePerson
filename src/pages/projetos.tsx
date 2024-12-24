@@ -13,9 +13,7 @@ import Link from "next/link";
 export default function Projetos() {
   return (
     <section className="flex min-h-screen flex-col items-center">
-      <div id="nav-projetos" className="flex w-full">
-        <NavComponent competencia={false} projetos={true} />{" "}
-      </div>
+      <NavComponent competencia={false} projetos={true} />{" "}
       <div className="flex mt-20 justify-center items-center w-96">
         <motion.div
           initial="hidden"
@@ -26,7 +24,7 @@ export default function Projetos() {
           <p id="titulo-competencia" className="text-center">
             Projetos em funcionamento
           </p>
-          <div className="flex flex-wrap h-screen gap-16">
+          <div className="flex flex-wrap h-screen gap-20">
             <CardProjeto
               img={relatorio}
               widht={0}
