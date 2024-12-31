@@ -19,10 +19,10 @@ export default function NavComponent({ projetos, competencia }: option) {
         <p id="logo-name" className="font-bold">EMERSON JOSÉ</p>
       </Link>
       <Link
-        className={`${competencia ? "bg-[#88CCCA] " : ""} font-extralight p-1 rounded`}
+        className={`${competencia ? "border-b-2 border-[#88CCCA]" : ""} font-extralight p-1 rounded`}
         href={"competencias"}>Competências</Link>
       <Link
-        className={`${projetos ? "bg-[#88CCCA]" : ""} font-extralight p-1 rounded`}
+        className={`${projetos ? "border-b-2 border-[#88CCCA]" : ""} font-extralight p-1 rounded`}
         href={"/projetos"}>Projetos</Link>
       <Link
         className="flex gap-1"

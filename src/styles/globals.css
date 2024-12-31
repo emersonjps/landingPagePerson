@@ -265,12 +265,14 @@ body {
   }
   html {
     padding: 20px;
+    width: 500px;
   }
   #sumary {
     padding: 1rem;
   }
   #navbar {
     width: 100%;
+    gap: 0.5rem;
   }
   #logo-name {
     width: 150px;
