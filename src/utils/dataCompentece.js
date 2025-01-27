@@ -66,7 +66,7 @@ const data = [
     },
     {
         "img": aws,
-        "description": "AWS, seus serviços são utilizados para armazenamento de mídia em BUCKET S3, criação de instância de servidores em E2C com acesso SSH manutenções em sistemas.",
+        "description": "AWS, seus serviços são utilizados para armazenamento de mídia em BUCKET S3, criação de instância de servidores em EC2 com acesso SSH manutenções em sistemas.",
         "width": 200,
         "height": 200
     }
