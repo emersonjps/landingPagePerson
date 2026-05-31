@@ -12,7 +12,7 @@ import aws from "@/assets/img/aws.png";
 const data = [
     {
         "img": ts,
-        "description": "Criação de tipo, interface e class, melhorando o paradigma de POO na web, utilizado para sistemas mais robustos onde esta abordagem se torna melhor que JS vanilla.",
+        "description": "Base de todos os projetos: garante segurança de tipos em sistemas transacionais de alta criticidade, reduzindo bugs em produção e viabilizando liderança técnica em equipes distribuídas.",
         "width": 200,
         "height": 200
     },
@@ -36,7 +36,7 @@ const data = [
     },
     {
         "img": nestjs,
-        "description": "Construção de back-end robusto, com segurança de tipo utilizando Typescript como linguagem padrão, Frame Work utilizado para facilitar integração entre sistemas WEB.",
+        "description": "Framework principal em projetos de liderança técnica. Usado para construir back-ends transacionais com integrações de pagamento (Stripe, Zoop, Mercado Pago) e observabilidade completa.",
         "width": 200,
         "height": 200
     },
@@ -66,7 +66,7 @@ const data = [
     },
     {
         "img": aws,
-        "description": "AWS, seus serviços são utilizados para armazenamento de mídia em BUCKET S3, criação de instância de servidores em EC2 com acesso SSH manutenções em sistemas.",
+        "description": "Infraestrutura em produção: S3 para armazenamento de mídia, EC2 para servidores, com observabilidade avançada via Datadog e Watchdog para monitoramento de APIs em ambiente Health Tech.",
         "width": 200,
         "height": 200
     }

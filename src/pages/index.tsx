@@ -20,7 +20,7 @@ export default function Home() {
         animate="visible"
         variants={animationVariants}
         transition={{ duration: 0.5 }}>
-        <article id="sumary" className="pl-96 pr-96">
+        <article id="sumary" className="w-full max-w-2xl mx-auto px-6">
           <ViewProfile />
           <hr className="w-full border-t border-white my-8" />
           <WorkProfile />
