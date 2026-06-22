@@ -5,12 +5,21 @@ import NavComponent from "../components/NavComponent/NavComponent"
 import Copyright from "../components/Copyright/Copyright"
 import Link from "next/link"
 
+import cardaprime from "@/assets/img/cardaprime.png"
 import p06 from "@/assets/img/p06.jpg"
 import p14 from "@/assets/img/p14.jpg"
 import p15 from "@/assets/img/p15.jpg"
 import relatorio from "@/assets/img/relatorio.png"
 
 const projects = [
+  {
+    title: "Cardaprime",
+    img: cardaprime,
+    description:
+      "Plataforma completa de gestão para restaurantes com cardápio digital, delivery e sistema de gerenciamento de pedidos (KDS).",
+    stack: ["Next.js", "TypeScript", "tRPC", "Strapi", "MercadoPago", "PostgreSQL", "AWS S3", "Vercel"],
+    link: "https://cardaprime.com/",
+  },
   {
     title: "Relatório PAPS",
     img: relatorio,
